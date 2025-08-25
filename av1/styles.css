@@ -1,0 +1,92 @@
+body{
+    background-color: #e5d3ba;
+    font-family: 'Roboto';
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: sticky;
+    top: 0;
+}
+h1{
+    color:aliceblue;
+    margin: 0;
+}
+p{
+    line-height: 1.5;
+}
+.no-decoration{
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    background-color: #181f27;
+    padding: 15px;
+    margin-top: 0;
+}
+.logo{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    color: burlywood;
+    width: fit-content;
+    font-weight: bolder;
+}
+.navbar{
+    align-content: center;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+.nav-list li{
+    height: 100%;
+}
+.nav-list li a{
+    color: antiquewhite;
+    font-weight: bold;
+    padding: 20px 50px;
+    transition: .4s;
+}
+.nav-list li a:hover{
+    background-color: burlywood;
+    color: #181f27;
+    text-decoration: underline;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.secao-artigos{
+    width: 98%;
+}
+.artigo{
+    background-color: burlywood;
+    color: #2b2b2b;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 5px;
+    padding: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-artigo{
+    max-width: 100%;
+    object-fit: fill;
+}
+.img-redonda{
+    border-radius: 50%;
+    width: 40%;
+    height: 40%;
+}
+.bg-artigo{
+    width: 100%;
+}
