@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Ola, Mundo!</title>
+    <title>Café-Teria - blog</title>
 </head>
 <body>
     <header>
@@ -12,38 +12,51 @@
         <h1 class="logo"><a href="#" class="no-decoration">Café-Teria</a></h1>
             <nav class="navbar">
                 <ul class="nav-list">
-                    <li><a href="#" class="no-decoration">Home</a></li>
-                    <li><a href="#" class="no-decoration">Sobre</a></li>
-                    <li><a href="#" class="no-decoration">Contato</a></li>
+                    <li><a href="#" class="no-decoration link">Home</a></li>
+                    <li><a href="#artigos" class="no-decoration link">Artigos</a></li>
+                    <li><a href="#contato" class="no-decoration link">Contato</a></li>
                 </ul>
             </nav>
         </menu>
     </header>
     <main>
-        <section class="secao-artigos">
-            <article class="artigo">
-                <h2 class="titulo-artigo">Titulo</h2>
+        <section class="secao" id="artigos">
+            <article class="card card-linha">
                 <img src="images/Latte_coffee.jpg" alt="imagem de café latte" class="img-artigo img-redonda">
-                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut suscipit inventore ratione veritatis eaque voluptates, id nulla sapiente deserunt voluptas tenetur ex minima impedit? Repellat omnis sed et iste earum!</p>
-                <p class="conclusao">Pronto</p>
+                <div class="descricao-artigo">
+                    <h2 class="titulo-artigo">Segredos do café perfeito</h2>
+                    <p class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus tenetur consequatur magni quae voluptatum deserunt quia ipsam explicabo praesentium qui obcaecati, nobis, aut unde exercitationem laborum natus dicta eos! Quod?</p>
+                    <p class="conclusao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam corporis veritatis aspernatur delectus facere a dolor odit consectetur! Minima non ipsam deleniti ducimus ipsa dicta sed reiciendis asperiores fugiat eaque!</p>
+                </div>
             </article>
-            <article class="artigo">
-                <h2 class="titulo-artigo">Titulo</h2>
+            <article class="card card-coluna">
+                <h2 class="titulo-artigo">Dicas de acompanhamentos</h2>
                 <img src="images/s2.webp" alt="plano de fundo com salgados" class="img-artigo bg-artigo">
-                <p class="texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique dignissimos culpa temporibus voluptate tenetur nostrum corporis neque, dicta qui ipsa, vero non perferendis labore, nesciunt aspernatur iste officia molestiae. Quod!</p>
-                <p class="conclusao">Pronto denovo</p>
+                <div class="descricao-artigo">
+                    <p class="texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique dignissimos culpa temporibus voluptate tenetur nostrum corporis neque, dicta qui ipsa, vero non perferendis labore, nesciunt aspernatur iste officia molestiae. Quod!</p>
+                    <p class="conclusao">E ponto final.</p>
+                </div>
             </article>
         </section>
-        <section>
-            <form action="" method="get">
-                <label for="nome">Nome: </label>
-                <input type="text" id="nome" name="nome" required>
-                <label for="email">Email: </label>
-                <input type="email" id="email" name="email" required>
-                <label for="mensagem">Mensagem: </label>
-                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
+        <section class="secao secao-contato" id="contato">
+            <article class="card card-coluna">
+                <h2 class="titulo-artigo">Contato</h2>
+                <form action="" method="get" class="form-contato">
+                    <div class="div-nome">
+                        <label for="nome">Nome: </label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="div-email">
+                        <label for="email">E-mail: </label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="div-mensagem">
+                        <label for="mensagem">Mensagem: </label>
+                        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="link">Enviar</button>
+                </form>
+            </article>
         </section>
     </main>
 </body>
