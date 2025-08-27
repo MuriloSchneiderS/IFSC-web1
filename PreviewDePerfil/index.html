@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Cartão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="editor">
+            <h2>Editor de Perfil</h2>
+            <div class="form-group">
+                <label for="input-nome">Nome:</label>
+                <input type="text" id="input-nome" placeholder="Digite seu nome...">
+            </div>
+            <div class="form-group">
+                <label for="input-imagem-url">URL da Imagem de Perfil:</label>
+                <input type="text" id="input-imagem-url" placeholder="Cole a URL de uma imagem...">
+            </div>
+        </div>
+
+        <div class="preview">
+            <h2>Preview do Cartão</h2>
+            <div class="card">
+                <img id="card-imagem" src="https://picsum.photos/150/150" alt="Imagem de Perfil">
+                <h3 id="card-nome">Seu Nome Aqui</h3>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js" defer></script>
+</body>
+</html>
