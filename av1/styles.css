@@ -8,6 +8,7 @@ body{
 header{
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 h1{
     color:aliceblue;
@@ -20,7 +21,7 @@ p{
     text-decoration: none;
     color: inherit;
 }
-
+/* CABEÇALHO */
 .menu{
     display: flex;
     justify-content: space-between;
@@ -76,7 +77,7 @@ p{
         padding: 10px 20px;
     }
 }
-
+/* CONTEÚDO */
 main{
     display: flex;
     align-items: center;
@@ -86,6 +87,7 @@ main{
 .secao{
     width: 100%;
 }
+/* SECAO ARTIGOS */
 .card{
     background-color: burlywood;
     color: #2b2b2b;
@@ -112,6 +114,11 @@ main{
 .card-coluna{
     flex-direction: column;
     align-items: center;
+    text-align: center;
+}
+.titulo-artigo{
+    color: #181f27;
+    font-size: xx-large;
 }
 .img-artigo{
     max-width: 100%;
@@ -123,10 +130,28 @@ main{
     width: 40%;
     height: 40%;
 }
+.card-coluna .conteudo-artigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    text-shadow: #181f27 0 0 10px;
+    height: fit-content;
+    font-size: 1.5vw;
+}
 .bg-artigo{
     width: 100%;
+    position: inherit;
 }
-
+.card-coluna .descricao-artigo{
+    position: absolute;
+    width: 70%;
+    font-weight: bold;
+    color: wheat;
+}
+/* SEÇÃO CONTATO */
 .secao-contato{
     background-color: #181f27;
     border-radius: 10px 10px 0 0;
