@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="script" href="script.js">
+  <link rel="stylesheet" href="style.css">
+  <title>Exercício: Formulário com Validação</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Crie sua Conta</h1>
+    <form id="signup-form" novalidate>
+      <div class="form-field">
+        <label for="username">Nome de Usuário</label>
+        <input type="text" id="username" name="username" data-min-length="5">
+        <small class="feedback-text"></small>
+      </div>
+      <div class="form-field">
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="password" data-min-length="8">
+        <small class="feedback-text"></small>
+      </div>
+      <button type="submit">Cadastrar</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
